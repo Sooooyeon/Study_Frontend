@@ -75,11 +75,12 @@ article img {
     aspect-ratio: 288/196;
     object-fit: cover;
     vertical-align: bottom;
+    /* vertical-align:bottom 줘서 이미지 하단의 여백 처리 */
 }
 
 .cont-des {
-
     margin: 10px 16px 12px;
+    /* padding으로 줄 경우 말줄임표 이후 글이 패딩 영역에 나타나게됨. 마진으로 여백 줄 것! */
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
