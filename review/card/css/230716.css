@@ -24,6 +24,11 @@ a {
     color: inherit;
 }
 
+ul,
+li {
+    list-style: none;
+}
+
 /* 공통 속성 */
 .fwr {
     font-size: 12px;
@@ -137,4 +142,22 @@ article img {
     width: 32px;
     height: 32px;
     vertical-align: top
+}
+
+.card-wrap {
+    display: flex;
+    gap: 32px 24px;
+    flex-wrap: wrap;
+}
+
+.notice {
+    width: 1224px;
+    max-width: calc(100% - (30px * 2));
+    /* 30px은 양쪽 여백 */
+    margin: 0 auto;
+}
+
+.notice h2 {
+    font-size: 30px;
+    margin-bottom: 32px;
 }
