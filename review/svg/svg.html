@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .a11y-hidden {
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+        }
+
+        button {
+            width: 100px;
+            height: 100px;
+            border: none;
+            background: none;
+            display: inline-block;
+            border: 3px solid #ddd;
+        }
+
+        .btn-img img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .btn-bg {
+            display: inline-block;
+            vertical-align: top;
+            background: url(./images/icon-home.svg) no-repeat center center / 70px auto;
+        }
+
+        .btn-bg:hover {
+            background-image: url(./images/icon-home-hover.svg);
+        }
+
+        .btn-svg1,
+        .btn-svg2 {
+            vertical-align: top;
+        }
+
+        .btn-svg1 svg,
+        .btn-svg2 svg {
+            width: 70px;
+            height: 70px;
+        }
+
+        /* 선 색상 변경하기 */
+        .btn-svg1:hover svg path {
+            stroke: rgb(255, 129, 84);
+        }
+
+        /* 색 채우기 */
+        .btn-svg2:hover svg path:first-child {
+            stroke: rgb(247, 71, 133);
+            fill: rgb(207, 122, 152);
+        }
+
+        .btn-svg2:hover svg path:last-child {
+            stroke: rgb(247, 71, 133);
+            fill: rgb(252, 193, 226);
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="btn-img"><img src="./images/icon-home.svg" alt="home"></button>
+    <button type="button" class="btn-bg">
+        <span class="a11y-hidden">home</span>
+    </button>
+    <button type="button" class="btn-svg1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M9 21V12H15V21" stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+    <button type="button" class="btn-svg2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M9 21V12H15V21" stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+</body>
+
+</html>
