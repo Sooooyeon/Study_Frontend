@@ -1,0 +1,197 @@
+/* font ------------------------- */
+@font-face {
+    font-family: 'Pretendard-regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* reset */
+body,
+h1,
+h2,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+input,
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+}
+
+button:enabled {
+    cursor: pointer;
+}
+
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+/* css 적용 */
+
+body {
+    font-family: 'Pretendard-regular';
+    background-color: #fffaf0;
+}
+
+.max-width {
+    /* 클래스로 만들어 다른 요소들애도 적용 가능하게 함 */
+    /* background-color: gold; */
+    width: 1284px;
+    max-width: calc(100% - 60px);
+
+    margin: auto;
+}
+
+/* header */
+.header {
+    background-color: #fff;
+}
+
+.header .max-width {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    width: 165px;
+}
+
+.header .login-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header .login-text p strong {
+    box-shadow: inset 0 -0.5em 0 rgba(255, 79, 110, 0.5);
+    font-family: 'Pretendard-bold';
+}
+
+.header .login-text p::after {
+    content: '|';
+    color: #d8ddde;
+    margin-left: 24px;
+
+}
+
+
+/* 버튼 */
+[class^='btn'] {
+    height: 40px;
+    padding: 0 20px 0 46px;
+    display: inline-flex;
+    /* 부모 요소에 flex가 적용되어, 인라인 블록 주지 않아도 너비값, 높이값을 가질 수 있으나 유지보수를 생각해 인라인 블록을 주는 것이 좋음 (컴포넌트의 개념) */
+}
+
+.btn-join {
+
+    align-items: center;
+    background: url(../images/icon-join.svg) no-repeat 10px 50% / 32px;
+}
+
+.btn-login {
+
+    align-items: center;
+    background: url(../images/icon-login.svg) no-repeat 10px 50% / 32px;
+}
+
+.btn-logout {
+
+    align-items: center;
+    background: url(../images/icon-logout.svg) no-repeat 10px 50% / 32px;
+}
+
+/* main */
+.login {
+    margin-top: 70px;
+}
+
+.main-title {
+    width: 250px;
+    margin: auto;
+    ;
+    text-align: center;
+}
+
+.main-title img {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main-title strong {
+    color: #29363D;
+    font-size: 24px;
+    font-family: 'Pretendard-bold';
+    box-shadow: inset 0 -0.5em 0 rgba(255, 79, 110, 0.2);
+    border-bottom: 2px solid #ff4f6e;
+}
+
+/* form */
+.form {
+    width: 392px;
+    margin: 40px auto 52px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #29363D;
+}
+
+.form>div {
+    margin-bottom: 24px;
+}
+
+.form input {
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #677880;
+    border-radius: 4px 4px 0px 0px;
+    box-sizing: border-box;
+}
+
+.form button[type='submit'] {
+    width: 100%;
+    height: 48px;
+    background-color: #29363D;
+    color: #F4F5F5;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.footer {
+    text-align: center;
+    color: #677880;
+    font-size: 12px;
+}
