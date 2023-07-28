@@ -1,0 +1,10 @@
+.chk-login-state::before {
+    background: url(../images/check-box-color.png) no-repeat 50% 0 / 22px;
+}
+
+.notice2 {
+    font-size: 14px;
+    color: #F4492E;
+    margin-bottom: 12px;
+    margin-left: 4px;
+}

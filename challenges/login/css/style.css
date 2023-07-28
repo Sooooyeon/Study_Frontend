@@ -60,7 +60,7 @@ body {
 .wrap {
     width: 520px;
     height: 100%;
-    margin: 10% auto;
+    margin: 4% auto;
 
     border-radius: 10px;
     border: 1px solid #C4C4C4;
@@ -129,14 +129,14 @@ body {
     display: inline-block;
     width: 22px;
     height: 22px;
-    background: url(/images/check-box.png) no-repeat 50% 0 / 22px;
+    background: url(../images/check-box.png) no-repeat 50% 0 / 22px;
     vertical-align: top;
     margin-right: 8px;
     margin-left: 4px;
 }
 
 .chk-wrap:active .chk-login-state::before {
-    background: url(/images/check-box-color.png) no-repeat 50% 0 / 22px;
+    background: url(../images/check-box-color.png) no-repeat 50% 0 / 22px;
 }
 
 .chk-login-state {
@@ -195,22 +195,22 @@ body {
 
 .social-wrap .btn-google {
     border: 1px solid #767676;
-    background: url(./images/Google__G__Logo\ 1.png) no-repeat 12px 50% / 28px;
+    background: url(../images/Google__G__Logo\ 1.png) no-repeat 12px 50% / 28px;
     margin-top: 29px;
 }
 
 .social-wrap .btn-facebook {
     border: 1px solid #2D9CDB;
-    background: url(./images/facebook.png) no-repeat 12px 50% / 28px;
+    background: url(../images/facebook.png) no-repeat 12px 50% / 28px;
 }
 
 .social-wrap .btn-naver {
     border: 1px solid #00BF18;
-    background: url(./images/naver-logo.png) no-repeat 12px 50% / 28px;
+    background: url(../images/naver-logo.png) no-repeat 12px 50% / 28px;
 }
 
 .social-wrap .btn-kakao {
     border: 1px solid #F2C94C;
-    background: url(./images/message-circle.png) no-repeat 12px 50% / 28px;
+    background: url(../images/message-circle.png) no-repeat 12px 50% / 28px;
     margin-bottom: 25px;
 }
