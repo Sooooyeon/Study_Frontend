@@ -52,6 +52,9 @@ img {
 }
 
 /* css 시작 */
+:root {
+    --check-box-img: url('../images/check-box.png');
+}
 
 body {
     font-family: 'SpoqaHanSansNeo-Regular';
@@ -118,7 +121,7 @@ body {
     position: absolute;
 }
 
-.chk-wrap {
+.chkwrap {
     height: 22px;
     margin: 6px 0 20px 0;
     line-height: 22px;
@@ -129,14 +132,10 @@ body {
     display: inline-block;
     width: 22px;
     height: 22px;
-    background: url(../images/check-box.png) no-repeat 50% 0 / 22px;
+    background: var(--check-box-img) no-repeat 50% 0 / 22px;
     vertical-align: top;
     margin-right: 8px;
     margin-left: 4px;
-}
-
-.chk-wrap:active .chk-login-state::before {
-    background: url(../images/check-box-color.png) no-repeat 50% 0 / 22px;
 }
 
 .chk-login-state {
