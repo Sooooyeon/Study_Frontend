@@ -121,6 +121,28 @@ body {
     position: absolute;
 }
 
+.inp-id.inp-id-change {
+    border: none;
+    width: 468px;
+    margin-left: 2px;
+    outline: 2px solid #F4492E;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+}
+
+#notice {
+    display: none;
+}
+
+#notice.notiadd {
+    display: block;
+    font-size: 14px;
+    color: #F4492E;
+    margin-bottom: 10px;
+    margin-left: 4px;
+
+}
+
 .chkwrap {
     height: 22px;
     margin: 6px 0 20px 0;
