@@ -19,11 +19,12 @@
         <section class="login">
             <p class="solve">위니브에서 여러분의 궁금증을 해결하세요! :&#41;</p>
             <label class="a11y-hidden" for="user-id">아이디</label>
-            <input type="text" class="inp-id" id="user-id" placeholder="아이디">
-            <p id="notice">아이디를 입력해 주세요.</p>
+            <input type="text" class="inp-id" id="user-id" name="username" placeholder="아이디">
+            <p id="noticeInput">아이디를 입력해 주세요.</p>
 
             <label class="a11y-hidden" for="user-pw">비밀번호</label>
-            <input type="password" class="inp-pw" id="user-pw" placeholder="비밀번호">
+            <input type="password" class="inp-pw" id="user-pw" name="password" placeholder="비밀번호">
+            <p id="noticeWrong">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
 
             <div class="chkwrap"><button class="chk-login-state" type="button">로그인 상태 유지</button>
             </div>

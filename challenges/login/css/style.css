@@ -130,17 +130,29 @@ body {
     margin-bottom: 6px;
 }
 
-#notice {
+#noticeInput {
     display: none;
 }
 
-#notice.notiadd {
+#noticeInput.notiAdd {
     display: block;
     font-size: 14px;
     color: #F4492E;
     margin-bottom: 10px;
     margin-left: 4px;
 
+}
+
+#noticeWrong {
+    display: none;
+}
+
+#noticeWrong.notiWrong {
+    display: block;
+    font-size: 14px;
+    color: #F4492E;
+    margin-bottom: 12px;
+    margin-left: 4px;
 }
 
 .chkwrap {

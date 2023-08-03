@@ -11,16 +11,33 @@ change.addEventListener('click', () => {
     }
 })
 
-const noticeId = document.querySelector('.btn-login');
+const notice = document.querySelector('.btn-login');
 
-noticeId.addEventListener('click', () => {
-    // if문 필요 -> 아이디가 입력되지 않았을때
-    let notiid = document.getElementById('notice');
-    notiid.className += ' notiadd';
 
-    let notiidbox = document.getElementById('user-id');
-    notiidbox.className += ' inp-id-change';
+
+
+notice.addEventListener('click', (e) => {
+    e.preventDefault();
+    const idForm = document.getElementById('user-id').value;
+    const pwForm = document.getElementById('user-pw').value;
+
+    if (idForm === '') {
+        let notiId = document.getElementById('noticeInput');
+        notiId.className += ' notiAdd';
+
+        let notiIdBox = document.getElementById('user-id');
+        notiIdBox.className += ' inp-id-change';
+    }
+
+    // 아이디 또는 비밀번호가 일치하지 않는걸 알아내는 식은...? 흠...
+    // if (idForm === '' && pwForm === '') {
+    //     let notiWrong = document.getElementById('noticeWrong');
+    //     notiWrong.className += ' notiWrong';
+
+    // }
 })
+
+
 
 
 // 쿼리셀렉터로 가상요소를 가져오지 못하는 이유는 html문서내에 그려지지 않아서이고, 
