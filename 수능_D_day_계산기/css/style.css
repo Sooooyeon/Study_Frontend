@@ -1,0 +1,225 @@
+/* font */
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* reset */
+body,
+h1,
+h2,
+p,
+button,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    font-family: 'Pretendard';
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+body {
+    background: url(/img/library.jpeg) no-repeat 50% 50% / cover;
+    /* display: flex;
+    text-align: center;
+    align-items: center; */
+    color: #fff;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wrap h1 {
+    padding: 5rem 0 4rem;
+    text-align: center;
+    font-family: 'KBO-Dia-Gothic_bold';
+    /* color: #eee; */
+    font-size: 3rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.calendar {
+    position: relative;
+}
+
+.calendar img {
+    width: 30rem;
+}
+
+.calendar #dDay {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, 0);
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'KBO-Dia-Gothic_bold';
+    color: rgb(44, 44, 44);
+}
+
+.calendar #time {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translate(-50%, 0);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'KBO-Dia-Gothic_bold';
+    color: rgb(44, 44, 44);
+    transition: all 0.3;
+}
+
+.dateBox li {
+    width: 20rem;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.dateBox li span {
+    position: absolute;
+    right: 1.2rem;
+}
+
+.dateBox li:first-child {
+    border-top: 1px solid #ccc;
+}
+
+.dateBox li:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.doCheerMessage {
+    display: flex;
+    flex-direction: column;
+}
+
+.writeMessage {
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#cheerupText,
+.btnDoCheer {
+    border-radius: 0.3rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    color: rgb(44, 44, 44);
+}
+
+#cheerupText {
+    margin: 0.8rem 0;
+    resize: none;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#cheerupText::placeholder {
+    color: rgb(124, 124, 124);
+    font-size: 1rem;
+}
+
+.btnDoCheer {
+    height: 3rem;
+    font-size: 1rem;
+}
+
+.btnDoCheer:hover {
+    background-color: rgb(44, 44, 44);
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #eee;
+}
+
+@media screen and (max-width:950px) {
+    body {
+        background: url(/img/library.jpeg) no-repeat 50% 50% / cover;
+        /* display: flex;
+        text-align: center;
+        align-items: center; */
+        color: #fff;
+    }
+
+    .wrap {
+        height: 100%;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .btnDoCheer {
+        margin-bottom: 5rem;
+    }
+
+}
+
+@media screen and (max-width:570px) {
+    .wrap h1 {
+        font-size: 1.5rem;
+    }
+
+    .calendar img {
+        width: 20rem;
+    }
+
+    .calendar #dDay {
+        width: 400px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, 0);
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'KBO-Dia-Gothic_bold';
+        color: rgb(44, 44, 44);
+    }
+
+    .calendar #time {
+        width: 400px;
+        position: absolute;
+        left: 50%;
+        top: 78%;
+        transform: translate(-50%, 0);
+        font-size: 1rem;
+        text-align: center;
+        font-family: 'KBO-Dia-Gothic_bold';
+        color: rgb(44, 44, 44);
+        transition: all 0.3;
+    }
+}
