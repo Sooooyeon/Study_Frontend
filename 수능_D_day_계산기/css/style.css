@@ -93,7 +93,7 @@ body {
     left: 50%;
     top: 78%;
     transform: translate(-50%, 0);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     font-family: 'KBO-Dia-Gothic_bold';
     color: rgb(44, 44, 44);
@@ -216,7 +216,7 @@ body {
         left: 50%;
         top: 78%;
         transform: translate(-50%, 0);
-        font-size: 1rem;
+        font-size: 0.9rem;
         text-align: center;
         font-family: 'KBO-Dia-Gothic_bold';
         color: rgb(44, 44, 44);
