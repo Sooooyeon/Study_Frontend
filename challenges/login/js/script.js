@@ -28,13 +28,14 @@ notice.addEventListener('click', (e) => {
         let notiIdBox = document.getElementById('user-id');
         notiIdBox.className += ' inp-id-change';
     }
+    // 포커스되면 원래대로 돌아오게 만들기 구현못함
 
     // 아이디 또는 비밀번호가 일치하지 않는걸 알아내는 식은...? 흠...
-    // if (idForm === '' && pwForm === '') {
-    //     let notiWrong = document.getElementById('noticeWrong');
-    //     notiWrong.className += ' notiWrong';
+    if (idForm === '' && pwForm === '') {
+        let notiWrong = document.getElementById('noticeWrong');
+        notiWrong.className += ' notiWrong';
 
-    // }
+    }
 })
 
 

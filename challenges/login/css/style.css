@@ -87,7 +87,7 @@ body {
     right: 24px;
     width: 16px;
     height: 16px;
-    background: url(./images/close.png) no-repeat 0 0 / 16px;
+    background: url(../images/close.png) no-repeat 0 0 / 16px;
 
 }
 
@@ -129,6 +129,18 @@ body {
     box-sizing: border-box;
     margin-bottom: 6px;
 }
+
+/* .inp-id.inp-id-change:focus {
+    width: 472px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    position: relative;
+} */
 
 #noticeInput {
     display: none;
