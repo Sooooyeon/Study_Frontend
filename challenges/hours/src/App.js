@@ -100,6 +100,7 @@ body {
   content: '';
   background-image: url("./img/quotes.svg");
   position: absolute;
+  display: block;
 } */
 
 .hoursLaw span{
