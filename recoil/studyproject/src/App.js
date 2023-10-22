@@ -2,6 +2,7 @@ import { useRecoilState } from 'recoil';
 import './App.css';
 import { useState } from 'react';
 import { countState } from './atom';
+import Pet from './Pet';
 
 function Counter(){
   const [count, setCount] = useRecoilState(countState);
@@ -23,6 +24,7 @@ function App() {
     <div>
       <Counter/>
       <DisplayCounter/>
+      <Pet />
     </div>
   );
 }
