@@ -9,7 +9,7 @@ const TextSize = () => {
 
 	const randomColor = () => {
 		const colors = ["red", "blue", "violet", "green", "orange"];
-		const randomIdx = Math.floor(Math.random() * color.length);
+		const randomIdx = Math.floor(Math.random() * colors.length);
 		return colors[randomIdx];
 	}
 

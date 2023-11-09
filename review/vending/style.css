@@ -1,0 +1,49 @@
+/* reset */
+body,
+h1,
+h2,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+}
+
+/* css 시작 */
+body {
+    background-color: #EAE8FE;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 img {
+    max-width: 50%;
+    /* 브라우저 창의 크가 줄어들면 창 크기의 50%만 차지하게됨 */
+}
+
+.section1 {
+    background-color: rgb(66, 98, 57);
+}
+
+.section2 {
+    background-color: rgb(53, 91, 205);
+}
+
+.section3 {
+    background-color: rgb(227, 131, 62);
+}
