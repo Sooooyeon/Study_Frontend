@@ -18,8 +18,8 @@ function a() {
   // b로 접근 불가능
 }
 
-a(); // a, b, c
-c(); // c
+a(); // a
+c(); // c b 
 
 // 최상위에 있는 함수 a,c는 부모가 anonymous
 // 함수 b -> 함수 c -> anonymous
